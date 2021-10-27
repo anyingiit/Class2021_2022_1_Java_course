@@ -1,0 +1,63 @@
+@startuml test
+
+class HomeworkInfo {
+    ~HomeworkInfo(type, course, time, detail)
+}
+
+
+class Organization {
+    int organization
+}
+
+class School {
+    String schoolName
+}
+
+class ClassRoom {
+    int classRoomId
+    String ClassName
+}
+
+class Person {
+    int personId
+    string name
+    String getName()
+    int getPersonId()
+    int getPersonType()
+}
+
+class Student {
+    ~Student(int studentId)
+    int studentId
+    int addHomework(type, course, time, detail)
+    bool delHomework(int homeworkId)
+    bool editHomework(int homeworkId, type, course, time, detail)
+    HomeworkInfo searchHomework()
+}
+
+class Adminstrator {
+    int adminstratorId
+}
+
+class StudentAdmin {
+    int studentAdminId
+}
+
+class Teacher {
+    int teacherId
+}
+
+class Headmaster {
+    int headmasterId
+}
+Organization <|-- School
+School <|-- ClassRoom
+ClassRoom <|-- Person
+Person <|-- Student
+Person <|-- Adminstrator
+Adminstrator <|-- StudentAdmin
+Adminstrator <|-- Teacher
+Adminstrator <|-- Headmaster
+
+
+@enduml
