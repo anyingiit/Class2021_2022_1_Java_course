@@ -1,10 +1,10 @@
 package JClassHomework_21_10_27_8;
 
 public class QuickSort {
-    QuickSort(int[] sourceArray){
+    public static void sort(int[] sourceArray){
         quickSort(sourceArray, 0, sourceArray.length - 1);
     }
-    private void quickSort(int[] array, int left, int right){
+    private static void quickSort(int[] array, int left, int right){
         if (left > right){
             return;
         }
@@ -24,7 +24,7 @@ public class QuickSort {
         quickSort(array, left, i - 1);
         quickSort(array, i + 1, right);
     }
-    private void swap(int[] array, int indexA, int indexB){
+    private static void swap(int[] array, int indexA, int indexB){
         int temp = array[indexA];
         array[indexA] = array[indexB];
         array[indexB] = temp;
