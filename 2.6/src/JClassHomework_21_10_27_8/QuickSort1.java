@@ -1,6 +1,16 @@
 package JClassHomework_21_10_27_8;
 
+/**
+ * 快速排序, 正序
+ * 使用存储pivot值的方法进行排序
+ * @author AnYing
+ * @Tile 2021-10-29 01:50:43
+ */
 public class QuickSort1 {
+    /**
+     * 对外公开的排序方法
+     * @param sourceArray 目标数组
+     */
     public static void sort(int[] sourceArray){
         quickSort(sourceArray, 0, sourceArray.length - 1);
     }
