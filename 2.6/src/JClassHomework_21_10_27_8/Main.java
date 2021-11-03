@@ -7,14 +7,18 @@ import java.util.Random;
 public class Main {
     public static void main(String[] args) {
 //        ArrayList<Integer> targetArray = new ArrayList<Integer>();
-        int[] targetArray = new int[50000];
-        Random random = new Random(1000);
-        for (int i = 0; i < 50000; i++){
-            targetArray[i] = random.nextInt(100000);
-        }
+
+//        int[] targetArray = new int[20];
+//        Random random = new Random(1000);
+//        for (int i = 0; i < 20; i++){
+//            targetArray[i] = random.nextInt(100000);
+//        }
+
 //        QuickSort.sort(targetArray.toArray(new int[targetArray.size()]));
 //        targetArray.stream()
-        QuickSort.sort(targetArray);
+
+        int[] targetArray = {3, 2, 1};
+        QuickSort2.sort(targetArray);
         for (int i = 1; i <= targetArray.length; i++){
             System.out.print(Integer.toString(targetArray[i - 1]) + '\t');
             if (i % 5 == 0) System.out.println();

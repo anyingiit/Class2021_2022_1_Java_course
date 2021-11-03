@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("某同学 00000000000");
+            System.out.println("某同学 00000000000");
         Scanner sin = new Scanner(System.in);
         System.out.print("输入您的成绩等级(A - D): ");
         char scoreLevel = sin.next().charAt(0);
