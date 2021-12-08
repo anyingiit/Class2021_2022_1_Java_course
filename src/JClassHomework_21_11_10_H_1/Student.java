@@ -84,7 +84,6 @@ public class Student {
 		if ( this. num > 50 ) errorMessage = errorMessage + " The num " + this. num + " is out of ranqe. His or her name is "+ this. name + ".\n";
 	}
 	public int getNum() {
-		// TODO Auto-generated method stub
 		return num;
 	}
 	

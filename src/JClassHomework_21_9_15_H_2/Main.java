@@ -16,6 +16,7 @@ public class Main {
 
         System.out.print("请输入一个字符: ");
         char ch = sin.next().charAt(0);
+        sin.close();
         System.out.println("输入的字符是: " + ch);
     }
 }

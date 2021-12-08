@@ -10,6 +10,7 @@ public class Main {
         System.out.print("请输入一个年份: ");
         try {
             number = Integer.parseInt(sin.next());
+            sin.close();
         }catch (NumberFormatException e){
             System.out.println("您输入的内容不是整数!");
             return;

@@ -14,6 +14,7 @@ public class Main {
             System.out.print("请输入第[" + (i + 1) + "]门课程成绩: ");
             score[i] = sin.nextInt();
         }
+        sin.close();
         for (int i = 0; i < scoreLen; i++){
             sum += score[i];
         }

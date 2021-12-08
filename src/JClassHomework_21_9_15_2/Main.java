@@ -10,6 +10,7 @@ public class Main {
         while (true){
             System.out.print("请输入一个四位整数: ");
             inputNum = sin.nextInt();
+            sin.close();
             if ((inputNum / 1000 > 0) && (inputNum / 10000 == 0)){
                 break;
             }

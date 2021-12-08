@@ -1,6 +1,6 @@
 package JClassHomework_21_12_1_H_1;
 
-import java.lang.reflect.Array;
+// import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -29,6 +29,7 @@ public class Main {
             System.out.print("请输入点" + i + "Y值: ");
             pointDatas.add(sin.nextInt());
         }
+        sin.close();
         Point pointQ = new Point(pointDatas.get(0), pointDatas.get(1));
         Point pointW = new Point(pointDatas.get(2), pointDatas.get(3));
         Point pointE = new Point(pointDatas.get(4), pointDatas.get(5));

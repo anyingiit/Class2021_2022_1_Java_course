@@ -3,11 +3,10 @@ package JClassHomework_21_11_24;
 public class hammerandnail {
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
         Hammer hammer1 = new Hammer(null, null);
         Hammer hammer2 = new Hammer("大铁锤", null);
         Hammer hammer3 = new Hammer("羊角锤", "红色");
-        Hammer hammer4 = new Hammer(null, null);
+        new Hammer(null, null);
 
 //  hammer1.setType("羊角锤");
 //  hammer2.setType("大铁锤");

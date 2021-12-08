@@ -10,6 +10,7 @@ public class Main {
         pass = sin.nextLine();
         System.out.print("请再次输入密码:");
         rePass = sin.nextLine();
+        sin.close();
         if (pass.equals(rePass)){
             System.out.println("注册完成!");
         }else {

@@ -61,6 +61,7 @@ public class Wordpuzzle implements GameInterface{
             Scanner sin = new Scanner(System.in);
             System.out.print("是否继续游戏?[y/n]");
             char inputOption = sin.nextLine().charAt(0);
+            sin.close();
             if (inputOption == 'y'){
                 startGame();
                 break;
@@ -69,14 +70,14 @@ public class Wordpuzzle implements GameInterface{
             }
         }
     }
-    private int getInput(){
-        return new Scanner(System.in).nextInt();
-    }
+    
     private void gameMain(){
         while (true){
             if (this.gameHP > 0){
                 System.out.print("请输入一个数字: ");
-                int inputNum = getInput();
+                Scanner sin = new Scanner(System.in);
+                int inputNum = sin.nextInt();
+                sin.close();
                 if ((inputNum != this.randomNumber)){
                     if (inputNum > this.randomNumber){
                         System.out.println("你输入的数字大了!");

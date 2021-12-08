@@ -8,6 +8,7 @@ public class Main {
         Scanner sin = new Scanner(System.in);
         System.out.print("请输入目标字符串:");
         String inputString = sin.nextLine();
+        sin.close();
         if (!isEchoBackString(inputString)){
             System.out.println("您输入的字符串不是回文字符串...");
         }else {

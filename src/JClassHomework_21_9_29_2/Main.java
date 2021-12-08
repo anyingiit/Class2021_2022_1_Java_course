@@ -34,6 +34,7 @@ public class Main {
                     break;
             }
         }
+        sin.close();
         System.out.println("您的成绩等级[" + scoreLevel + "]推算所得成绩为: " + result);
     }
 }

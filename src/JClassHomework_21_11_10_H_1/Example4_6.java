@@ -3,10 +3,10 @@ package JClassHomework_21_11_10_H_1;
 public class Example4_6 {
 
 	public static void main(String[] args) {
-		Student s1 = new Student("Mike",97);
-		Student s2 = new Student("Joy",98);
+		new Student("Mike",97);
+		new Student("Joy",98);
 		Student s3 = new Student("Bob",100);
-		Student s4 = new Student("Ben",89);
+		new Student("Ben",89);
 		
 		System.out.println(s3.getName());
 		System.out.println(Student.className);

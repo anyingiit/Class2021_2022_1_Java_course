@@ -15,6 +15,7 @@ public class ConsoleCal {
         num2 = sin.nextDouble();
         System.out.println("请输入一个运算符(+, -, *, /)");
         single = sin.next().charAt(0);
+        sin.close();
         switch (single){
             case '+':
                 result = num1 + num2;

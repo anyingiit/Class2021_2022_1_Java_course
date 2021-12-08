@@ -10,6 +10,7 @@ public class Main {
         for(int i=0;i<20;i++) {
             Scanner sun = new Scanner(System.in);
             int guess = sun.nextInt();
+            sun.close();
             if(guess == ans) {
                 flag = 1;
                 System.out.println("恭喜你，猜中了！");

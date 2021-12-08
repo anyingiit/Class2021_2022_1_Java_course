@@ -15,6 +15,7 @@ public class Main {
             }
             System.out.println("您输入的内容非法, 请输入大于等于0, 小于等于100的数字.");
         }
+        sin.close();
         System.out.print("您的成绩等级为");
         char level;
         if (score >= 90){

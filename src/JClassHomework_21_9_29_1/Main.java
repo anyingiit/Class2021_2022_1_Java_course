@@ -10,6 +10,7 @@ public class Main {
         Scanner sin = new Scanner(System.in);
         System.out.print("输入一个整数, 求其平方: ");
         int inputNum = sin.nextInt();
+        sin.close();
         System.out.println("整数[" + Integer.toString(inputNum) + "]平方为: " + inputNum * inputNum);
     }
 }

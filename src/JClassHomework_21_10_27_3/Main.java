@@ -12,6 +12,7 @@ public class Main {
         for (int i = 0; i < score.length; i++){
             score[i] = sin.nextDouble();
         }
+        sin.close();
         System.out.print("原始数据: " + '\t');
         for (double item :
                 score) {

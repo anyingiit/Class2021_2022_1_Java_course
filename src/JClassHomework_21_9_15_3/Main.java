@@ -17,6 +17,7 @@ public class Main {
         height = sin.nextFloat();
         System.out.print("请输入欲查询汽车宽度: ");
         width = sin.nextFloat();
+        sin.close();
         System.out.println("您欲查询的汽车[名称]为: " + carName);
         System.out.println("您欲查询的汽车[价格]为: " + price);
         System.out.println("您欲查询的汽车[高度]为: " + height);

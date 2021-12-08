@@ -11,6 +11,7 @@ public class Main {
         Scanner sin = new Scanner(System.in);
         System.out.print("请输入本月主叫通话时间: ");
         totalCallTime = sin.nextInt();
+        sin.close();
         if (totalCallTime > 100){
             price += (totalCallTime - 100) * 0.15;
         }

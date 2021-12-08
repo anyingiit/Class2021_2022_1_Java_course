@@ -7,12 +7,12 @@ import java.awt.event.ActionListener;
 public class CalJFrame {
     private JTextField MytextFieldB;
     private JTextField MytextFieldA;
-    private JComboBox MyComboBox;
+    private JComboBox<String> MyComboBox;
     private JButton MyButton;
     private JPanel MyJPanel;
     private JLabel MyJLabel;
-    private JTextField textField1;
-    private JCheckBox checkBox1;
+    // private JTextField textField1;
+    // private JCheckBox checkBox1;
 
     private double num1;
     private double num2;

@@ -10,5 +10,6 @@ public class Main {
         Scanner sin = new Scanner(System.in);
         System.out.print("请输入游戏序号: ");
         game.startGameFromNumber(sin.nextInt());
+        sin.close();
     }
 }
