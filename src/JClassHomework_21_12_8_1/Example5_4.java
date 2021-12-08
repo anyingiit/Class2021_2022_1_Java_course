@@ -24,5 +24,6 @@ public class Example5_4 {
 
     HavaLesson.study(mike);
     HavaLesson.study(joy);
+    System.out.println("某同学 00000000000");
   }
 }
