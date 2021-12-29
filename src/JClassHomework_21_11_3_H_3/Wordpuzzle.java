@@ -72,12 +72,11 @@ public class Wordpuzzle implements GameInterface{
     }
     
     private void gameMain(){
+        Scanner sin = new Scanner(System.in);
         while (true){
             if (this.gameHP > 0){
                 System.out.print("请输入一个数字: ");
-                Scanner sin = new Scanner(System.in);
                 int inputNum = sin.nextInt();
-                sin.close();
                 if ((inputNum != this.randomNumber)){
                     if (inputNum > this.randomNumber){
                         System.out.println("你输入的数字大了!");
@@ -93,5 +92,6 @@ public class Wordpuzzle implements GameInterface{
                 this.endGame(false);
             }
         }
+        sin.close();
     }
 }
