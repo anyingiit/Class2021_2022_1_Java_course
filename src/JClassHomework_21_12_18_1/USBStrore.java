@@ -1,6 +1,6 @@
 package JClassHomework_21_12_18_1;
 
-public class USBStrore implements IUSB {
+public class USBStrore implements IUSB {// USBStorore, 使用USB作为接口的存储介质, 类似于U盘, 移动硬盘等
 
   @Override
   public void install() {
