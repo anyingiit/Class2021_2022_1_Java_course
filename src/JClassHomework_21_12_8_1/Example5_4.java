@@ -15,7 +15,7 @@ public class Example5_4 {
     aStudent.doHomework();// 上转型独享调用的仍然是子类覆盖后的方法(既子类重写的方法)
     // aStudent.onDuty();// 上转型对象会丢失子类新增的方法
     if(aStudent instanceof Monitor){
-      ((Monitor)aStudent).onDyty();// 上转型对象能够转换成子类的对象, 进而回复子类所丢失的方法
+      ((Monitor)aStudent).onDyty();// 上转型对象能够转换成子类的对象, 进而恢复子类所丢失的方法
     }
 
     // Monitor aMonitor = mike;// 父类的对象不能够赋值子类的引用
