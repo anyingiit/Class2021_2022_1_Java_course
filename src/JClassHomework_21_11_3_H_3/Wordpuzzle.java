@@ -43,6 +43,8 @@ public class Wordpuzzle implements GameInterface{
         this.gameHP = maxGameHP;
         this.randomNumber = (int)(Math.random() * 100 + 1);
     }
+
+    @Override
     public void startGame(){
         initGame();
         printWelcome();
