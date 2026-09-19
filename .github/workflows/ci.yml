@@ -3,9 +3,9 @@ name: CI
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   pull_request:
-    branches: [main]
+    branches: [master]
   workflow_dispatch:
 
 # The workflow token is read-only by default.
@@ -52,7 +52,14 @@ jobs:
         with:
           persist-credentials: false
 
-      # Replace the step below with your project's test command. Pin any setup
-      # action you add to a full commit SHA, like the checkout step above.
-      - name: Run tests
-        run: echo "No tests yet. Replace this step with your project's test command."
+      # ubuntu-latest ships a current Temurin JDK by default; the project
+      # pins no version of its own, so the runner's default javac is used.
+      - name: Build
+        run: javac -d out -encoding UTF-8 $(find src -name '*.java')
+
+      # There were no tests in this repository. This compiles and runs one
+      # exercise (a bubble sort with a fixed input) and checks its actual
+      # output against the known-correct ascending sequence, so a broken
+      # sort fails the build instead of a step that only prints a message.
+      - name: Run smoke test
+        run: javac -d out -encoding UTF-8 -cp out test/SmokeTest.java && java -cp out SmokeTest
